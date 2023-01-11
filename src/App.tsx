@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 // theme for styled-components ThemeProvider
@@ -9,17 +8,17 @@ import { GlobalStyles } from "./styles/globalStyles";
 import { Header } from "./components/Header";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<ThemeProvider theme={theme}>
 			{/* Global Document styling like body color, font-family etc */}
 			<GlobalStyles />
 			<div className="App">
-				<Header></Header>
+				<Header />
 			</div>
 		</ThemeProvider>
 	);
 }
 
 export default App;
+
+// todo: add react router + setup Pages setup

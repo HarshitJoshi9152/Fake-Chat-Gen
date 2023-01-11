@@ -1,15 +1,24 @@
-import React, { useState } from "react";
-import { List, ListItem } from "./styled";
+import React from "react";
+import { List, ListItem, Head } from "./styled";
 
 export const Header: React.FC<{}> = () => {
-	const [clicks, setClicks] = useState(0);
-
 	return (
-		<header>
+		<List padding={true}>
+			<Head>FakeChatGen logo</Head>
 			<List>
-				<ListItem>FakeChatGen</ListItem>
-				<ListItem>logo</ListItem>
+				<ListItem>
+					<a href="#">Dark Mode switch</a>
+				</ListItem>
+				<ListItem>
+					<a href="#">Github</a>
+				</ListItem>
+				<ListItem>
+					<a href="#">Kohi</a>
+				</ListItem>
+				<ListItem>
+					<a href="#">Login/Profile</a>
+				</ListItem>
 			</List>
-		</header>
+		</List>
 	);
 };

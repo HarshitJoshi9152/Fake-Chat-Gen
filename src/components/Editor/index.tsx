@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { TemplateArea, EditorGrid } from "./styled";
 import { View } from "./View";
-import { ChatOptions } from "./chatOptions";
+import { ChatOptions, areaname } from "./ChatOptions";
 
 export const Editor: React.FC<{}> = () => {
 	// get template_name and the form !
@@ -12,9 +12,9 @@ export const Editor: React.FC<{}> = () => {
 		<TemplateArea>
 			<h1>{templateName}</h1>
 			<EditorGrid>
-				<ChatOptions gridarea="ChatOptions1" />
 				<View />
-				<ChatOptions gridarea="ChatOptions2" />
+				<ChatOptions gridarea={areaname.form1} />
+				<ChatOptions gridarea={areaname.form2} />
 			</EditorGrid>
 		</TemplateArea>
 	);

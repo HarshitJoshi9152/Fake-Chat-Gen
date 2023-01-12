@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 
+export enum areaname {
+	form1 = "ChatOptions1",
+	form2 = "ChatOptions2"
+}
+
 interface chatOptionsProps {
-	gridarea: string;
+	gridarea: areaname;
 }
 
 const StyledChatOptions = styled.div<chatOptionsProps>`
@@ -11,10 +16,6 @@ const StyledChatOptions = styled.div<chatOptionsProps>`
 `;
 
 export const ChatOptions: React.FC<chatOptionsProps> = ({ gridarea }) => {
-	useEffect(() => {
-		console.log(gridarea);
-	}, []);
-
 	return (
 		<StyledChatOptions gridarea={gridarea}>
 			Hello gridarea

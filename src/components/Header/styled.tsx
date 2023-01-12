@@ -7,7 +7,7 @@ interface ListProps {
 const List = styled.ul<ListProps>`
 	display: flex;
 	justify-content: space-around;
-	background-color: #b1b1e4;
+	background-color: #3498db;
 	/* padding: ${(props) =>
 		props.padding ? "1em" : "0"}; // commented just for now ! */
 	align-items: center;
@@ -42,6 +42,7 @@ const Head = styled.h1`
 export { List, ListItem, Head };
 
 // https://blog.agney.dev/styled-components-&-typescript/
+// https://www.codevertiser.com/styled-components-reuse-styles/
 // https://jsonformatter.org/json-to-typescript
 // https://www.youtube.com/watch?v=Qs1A76JyutU
 
@@ -53,3 +54,5 @@ export { List, ListItem, Head };
 // 		</a>
 // 	</li>
 // }
+
+// keep light blue and white theme

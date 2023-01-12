@@ -1,14 +1,21 @@
 import React, { useState } from "react";
 
-import { EditorContainer } from "./styled";
+import { TemplateArea, EditorGrid } from "./styled";
+import { View } from "./View";
+import { ChatOptions } from "./chatOptions";
 
 export const Editor: React.FC<{}> = () => {
 	// get template_name and the form !
 	const [templateName, setTemplateName] = useState("Basic Whatsapp Template");
 
 	return (
-		<EditorContainer>
+		<TemplateArea>
 			<h1>{templateName}</h1>
-		</EditorContainer>
+			<EditorGrid>
+				<ChatOptions gridarea="ChatOptions1" />
+				<View />
+				<ChatOptions gridarea="ChatOptions2" />
+			</EditorGrid>
+		</TemplateArea>
 	);
 };

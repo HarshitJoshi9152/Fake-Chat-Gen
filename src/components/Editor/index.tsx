@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { TemplateArea, EditorGrid } from "./styled";
-import { View } from "./View";
+import { TemplateArea, EditorGrid } from "./containers";
+import { View } from "./view";
 import { ChatOptions, areaname } from "./ChatOptions";
 
 export const Editor: React.FC<{}> = () => {

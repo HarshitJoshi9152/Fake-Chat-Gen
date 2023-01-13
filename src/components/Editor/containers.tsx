@@ -17,4 +17,15 @@ export const EditorGrid = styled.div`
 	grid-template-areas:
 		"view ChatOptions1"
 		"view ChatOptions2";
+
+	@media screen and (max-width: 576px) {
+		/* Mobile devices ? */
+		height: 150vh;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr repeat(2, 1fr);
+		grid-template-areas:
+			"view"
+			"ChatOptions1"
+			"ChatOptions2";
+	}
 `;

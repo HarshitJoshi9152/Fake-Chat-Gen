@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const useImg = (src: string): [HTMLImageElement, Boolean] => {
 	const [ready, setReady] = useState<Boolean>(false);
